@@ -1,0 +1,357 @@
+/*IMPORTANTO FONTES DO GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@300;600&display=swap');
+
+
+/*RESET NO CSS PADRÃO E ESTILOS GERAIS*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*
+section, div, h4, main{
+    border: 1px solid black
+}
+*/
+
+body{
+    background-color: rgb(241, 57, 88);
+}
+
+.Imagem_link, Imagem_link_inicio{
+    cursor: pointer;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 90px;
+    line-height: 100px;
+}
+
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+h3{
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 50px;
+}
+
+h4{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 35px;
+}
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/*ESTILOS ESPECÍFICOS*/
+
+/*Seção Incial*/
+.Div_header{
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    border-bottom: 1px solid white;
+}
+.Nav_inicio{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+}
+
+.Seção_inicial{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.Titulo_inicial{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.Subtitulo_inicial{
+    margin-bottom: 60px;
+}
+
+.Botão_inicio{
+    border: none;
+    background: none;
+    margin-right: 20px;
+}
+
+
+/*Sobre Mim*/
+.Seção_sobre_mim{
+    width: 100%;
+    background-color: rgb(252, 202, 210);
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-bottom: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.Div_texto_sobre_mim{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 55%;
+    padding-right: 5%;
+}
+
+.Titulo_sobre_mim{
+    color: rgba(0, 0, 0, 0.767);
+}
+
+.Paragrafo_sobre_mim{
+    color: rgba(0, 0, 0, 0.767);
+    text-align: justify;
+    font-size: 22px;
+}
+
+/*Projetos*/
+.Header_projetos{
+    text-align: center;
+}
+
+.Main_projetos{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+.Div_texto_projetos{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align:end;
+    gap: 30px;
+    background-color: ;
+}
+
+.Div_fotos_projetos{
+    margin-right: 120px;
+    width: 35%;
+}
+
+.Div_paragrafo_projetos{
+    background-color: rgb(252, 202, 210);
+}
+
+.Paragrafo_projetos{
+    font-size: 35px;
+    margin-right: 3%;
+    color: rgba(0, 0, 0, 0.767);
+}
+
+/*Acesse Projetos*/
+.Header_acesse_projetos{
+    text-align: center;
+}
+
+.Div_acesse_projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.Main_acesse_projetos{
+    display: flex;
+    align-items: first baseline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 2%;
+}
+
+.Titulo_acesse_projetos{
+    text-align: center;
+}
+
+.Paragrafo_acesse_projetos{
+    text-align: justify;
+    width: 90%;
+}
+
+.Footer_acesse_projetos{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+/*Habilidades*/
+.Header_habilidades{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.Main_habilidades{
+    display: flex;
+    justify-content: center;
+}
+
+.Div_habilidades{
+    width: 57%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    background-color: rgb(252, 202, 210);
+    border-radius: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+}
+
+/*Contato*/
+.Header_contato{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.Main_contato{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.Div_contato_botões{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.Botão_contato{
+    background: none;
+    border: none;
+}
+
+.Div_contato_formulario{
+    width: 40%;
+}
+
+
+
+
+/*RESPOSIVIDADE*/
+
+@media(max-width:1360px){
+    .Div_habilidades{
+        width: 65%;
+    }
+}
+
+
+@media(max-width: 1100px){
+    .Div_acesse_projetos{
+        width: 40%;
+    }
+    .Main_acesse_projetos{
+        justify-content: space-around;
+    }
+    .Div_habilidades{
+        width: 80%;
+    }
+}
+
+@media(max-width: 1041px){
+    .Seção_inicial{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    h1{
+        font-size: 70px;
+        line-height: 80px;
+        padding-bottom: 3%;
+    }
+}
+
+@media(max-width: 810px){
+    .Seção_sobre_mim{
+        width: auto;
+    }
+    .Foto_capa{
+        height: 500px;
+    }
+    .Imagem_link_inicio{
+        height: 60px;
+    }
+    .Titulo_inicial{
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .Botão_inicio{
+        margin-right: 10px;
+    }
+    .Titulo_sobre_mim{
+        font-size: 27px;
+    }
+    .Paragrafo_sobre_mim{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 38px;
+    }
+    .Paragrafo_projetos{
+        font-size: 28px;
+    }
+    .Titulo_acesse_projetos{
+        font-size: 28px;
+    }
+    .Div_acesse_projetos{
+        width: 47%;
+    }
+    .Imagem_link{
+        height: 80px;
+    }
+    .Div_contato_botões{
+        gap: 15px;
+    }
+    body{
+        width:min-content;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
